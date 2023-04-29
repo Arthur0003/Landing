@@ -10,7 +10,11 @@ body {
 }
 
 .mainWrapper {
-  @apply flex min-h-screen  flex-col bg-desktop-bg bg-contain bg-no-repeat sm:bg-mobileSize sm:bg-top-3;
+  background-image: url(./assets/icons/desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @apply flex min-h-screen  flex-col sm:bg-mobileSize sm:bg-top-3;
 }
 
 .mainContainer {

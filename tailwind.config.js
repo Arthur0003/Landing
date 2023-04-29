@@ -20,7 +20,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        'desktop-bg': "url('./src/assets/images/Desktop.svg')",
+        'desktop-bg': "url('./src/assets/icons/Desktop.svg')",
       },
       backgroundPosition: {
         'top-3': 'center top 3rem',
