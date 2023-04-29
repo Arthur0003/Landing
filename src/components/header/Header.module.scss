@@ -1,0 +1,37 @@
+.wrapper {
+  @apply mb-[65px] py-14 sm:mb-[40px] sm:py-4;
+}
+
+.headerWrapper {
+  @apply flex items-start xl:justify-between sm:justify-center;
+
+  .logoBlock {
+    @apply mr-[52px] flex max-w-[140px] cursor-pointer flex-col xl:mr-[25px] md:mr-[15px] md:max-w-[100px] sm:hidden;
+
+    img {
+      @apply mb-[10px];
+    }
+
+    .aboutLogo {
+      @apply font-['Montserrat'] text-[10px] font-light leading-3 text-[#E4E5EA];
+    }
+  }
+
+  .contacts {
+    @apply flex gap-x-12 xl:gap-x-4 lg:hidden;
+
+    p {
+      @apply whitespace-nowrap font-[inter] text-base font-medium leading-[19px] text-[#E4E5EA] xl:text-sm;
+    }
+
+    .icons {
+      @apply flex gap-x-8 xl:gap-x-3;
+      .icon {
+        @apply cursor-pointer duration-200 xl:w-5;
+      }
+      .icon:hover * {
+        @apply fill-[#9da0ad];
+      }
+    }
+  }
+}

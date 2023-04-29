@@ -1,0 +1,80 @@
+.contentWrapper {
+  @apply flex flex-col pb-5 sm:mx-auto sm:my-0 sm:max-w-[310px] sm:items-baseline xs:px-3;
+
+  .content {
+    @apply mb-[33px] flex sm:flex-col  sm:items-baseline;
+
+    .about {
+      @apply mr-[98px] flex flex-col lg:mr-16 sm:mb-3;
+
+      h4 {
+        @apply mb-5 font-[inter] text-sm font-bold uppercase leading-[17px] text-[#656566] xl:leading-3;
+      }
+
+      .aboutContent {
+        li {
+          @apply mb-[10px] whitespace-nowrap font-[inter] text-base font-normal leading-[19px] text-[#E4E5EA] xl:text-sm;
+
+          a {
+            @apply cursor-pointer whitespace-nowrap duration-200 hover:text-[#9da0ad] hover:underline;
+          }
+        }
+      }
+    }
+
+    .menu {
+      @apply mr-[147px] flex flex-col lg:mr-0 md:mr-0 sm:mb-5;
+      h4 {
+        @apply mb-5 font-[inter] text-sm font-bold uppercase leading-[17px] text-[#656566];
+      }
+
+      ul {
+        @apply mb-[10px] flex flex-wrap gap-y-2 font-[inter] text-base font-normal leading-[19px] text-[#E4E5EA] xl:text-sm xl:leading-4 sm:gap-y-4;
+
+        li {
+          @apply flex-shrink flex-grow-0 basis-1/2 lg:basis-[100%];
+
+          a {
+            @apply cursor-pointer duration-200 hover:text-[#9da0ad] hover:underline;
+          }
+        }
+      }
+    }
+
+    .contacts {
+      @apply flex flex-col;
+
+      h4 {
+        @apply mb-[21px] text-right font-[inter] text-sm font-bold uppercase leading-[17px] text-[#656566] sm:text-left;
+      }
+
+      p {
+        @apply mb-[21px] whitespace-nowrap text-right font-[inter] text-base font-normal leading-[19px] text-[#E4E5EA] lg:text-sm even:lg:whitespace-pre-wrap sm:text-left;
+      }
+
+      div {
+        @apply mb-[19px] flex justify-end gap-x-[10px] sm:justify-start;
+
+        .icon {
+          @apply cursor-pointer;
+        }
+
+        .icon:hover * {
+          @apply fill-[#9da0ad];
+        }
+      }
+    }
+  }
+
+  .copyright {
+    @apply flex flex-col items-end sm:items-start;
+
+    .copyrightText {
+      @apply mb-[5px] font-[Montserrat] text-xs font-normal leading-[15px] text-[#E4E5EA];
+    }
+
+    .confidential {
+      @apply mb-[5px] font-[Montserrat] text-xs font-normal leading-[15px] text-[#E4E5EA] underline duration-200 hover:text-[#9da0ad];
+    }
+  }
+}

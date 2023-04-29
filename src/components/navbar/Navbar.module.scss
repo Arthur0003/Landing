@@ -1,0 +1,7 @@
+.list {
+  @apply mr-[137px] flex gap-x-[30px] pt-[5px] font-[Inter] text-base font-medium leading-[19px] text-[#E4E5EA] xl:mr-[50px] xl:pt-0 xl:text-sm lg:mr-0 md:text-xs sm:gap-x-[20px] sm:text-sm sm:font-bold xs:gap-[6px] xs:text-xs;
+
+  & li {
+    @apply cursor-pointer transition-all duration-200 hover:text-[#9da0ad] hover:underline;
+  }
+}
