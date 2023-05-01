@@ -12,7 +12,7 @@ body {
 .mainWrapper {
   background-image: url(./assets/icons/desktop.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 
   @apply flex min-h-screen  flex-col sm:bg-mobileSize sm:bg-top-3;
 }
